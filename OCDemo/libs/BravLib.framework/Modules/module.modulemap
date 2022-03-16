@@ -1,0 +1,4 @@
+framework module BravLib {
+  header "BravLib-Swift.h"
+  requires objc
+}

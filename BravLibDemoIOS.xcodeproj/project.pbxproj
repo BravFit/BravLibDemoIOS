@@ -7,23 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23EA1D1727E18AED0088806B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D1627E18AED0088806B /* AppDelegate.swift */; };
-		23EA1D1927E18AED0088806B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D1827E18AED0088806B /* SceneDelegate.swift */; };
-		23EA1D1B27E18AED0088806B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D1A27E18AED0088806B /* ContentView.swift */; };
 		23EA1D1D27E18AF00088806B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D1C27E18AF00088806B /* Assets.xcassets */; };
 		23EA1D2027E18AF00088806B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D1F27E18AF00088806B /* Preview Assets.xcassets */; };
 		23EA1D2327E18AF00088806B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D2127E18AF00088806B /* LaunchScreen.storyboard */; };
+		23EA1D4F27E18BDE0088806B /* BravBleDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D2B27E18BDE0088806B /* BravBleDemoApp.swift */; };
+		23EA1D5027E18BDE0088806B /* BleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D2D27E18BDE0088806B /* BleModel.swift */; };
+		23EA1D5127E18BDE0088806B /* ItemWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D2E27E18BDE0088806B /* ItemWrap.swift */; };
+		23EA1D5227E18BDE0088806B /* MeasureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D2F27E18BDE0088806B /* MeasureModel.swift */; };
+		23EA1D5327E18BDE0088806B /* ReportItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3127E18BDE0088806B /* ReportItemView.swift */; };
+		23EA1D5427E18BDE0088806B /* DeviceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3227E18BDE0088806B /* DeviceItemView.swift */; };
+		23EA1D5527E18BDE0088806B /* ReportBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3427E18BDE0088806B /* ReportBuilder.swift */; };
+		23EA1D5627E18BDE0088806B /* ProteinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3627E18BDE0088806B /* ProteinBuilder.swift */; };
+		23EA1D5727E18BDE0088806B /* WeightCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3727E18BDE0088806B /* WeightCommonBuilder.swift */; };
+		23EA1D5827E18BDE0088806B /* BodyfatCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3827E18BDE0088806B /* BodyfatCommonBuilder.swift */; };
+		23EA1D5927E18BDE0088806B /* BmrBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3927E18BDE0088806B /* BmrBuilder.swift */; };
+		23EA1D5A27E18BDE0088806B /* VisfatCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3A27E18BDE0088806B /* VisfatCommonBuilder.swift */; };
+		23EA1D5B27E18BDE0088806B /* MuscleMassCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3B27E18BDE0088806B /* MuscleMassCommonBuilder.swift */; };
+		23EA1D5C27E18BDE0088806B /* WaterCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3C27E18BDE0088806B /* WaterCommonBuilder.swift */; };
+		23EA1D5D27E18BDE0088806B /* SkeletalMuscleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3D27E18BDE0088806B /* SkeletalMuscleBuilder.swift */; };
+		23EA1D5E27E18BDE0088806B /* BodyAgeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3E27E18BDE0088806B /* BodyAgeBuilder.swift */; };
+		23EA1D5F27E18BDE0088806B /* BmiCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D3F27E18BDE0088806B /* BmiCommonBuilder.swift */; };
+		23EA1D6027E18BDE0088806B /* LbmBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4027E18BDE0088806B /* LbmBuilder.swift */; };
+		23EA1D6127E18BDE0088806B /* BoneCommonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4127E18BDE0088806B /* BoneCommonBuilder.swift */; };
+		23EA1D6227E18BDE0088806B /* SubfatBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4227E18BDE0088806B /* SubfatBuilder.swift */; };
+		23EA1D6327E18BDE0088806B /* ReportBuilderOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4427E18BDE0088806B /* ReportBuilderOption.swift */; };
+		23EA1D6427E18BDE0088806B /* LevelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4527E18BDE0088806B /* LevelItem.swift */; };
+		23EA1D6527E18BDE0088806B /* BravScaleReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4627E18BDE0088806B /* BravScaleReport.swift */; };
+		23EA1D6627E18BDE0088806B /* ReportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4727E18BDE0088806B /* ReportType.swift */; };
+		23EA1D6727E18BDE0088806B /* ReportItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4827E18BDE0088806B /* ReportItem.swift */; };
+		23EA1D6827E18BDE0088806B /* I18n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4927E18BDE0088806B /* I18n.swift */; };
+		23EA1D6927E18BDE0088806B /* ReportItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4A27E18BDE0088806B /* ReportItemBuilder.swift */; };
+		23EA1D6A27E18BDE0088806B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4B27E18BDE0088806B /* Utils.swift */; };
+		23EA1D6B27E18BDE0088806B /* MeasurePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4D27E18BDE0088806B /* MeasurePage.swift */; };
+		23EA1D6C27E18BDE0088806B /* ScannerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D4E27E18BDE0088806B /* ScannerPage.swift */; };
+		23EA1D6F27E18C1A0088806B /* BravLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EA1D6E27E18C1A0088806B /* BravLib.framework */; };
+		23EA1D7A27E194160088806B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D7927E194160088806B /* AppDelegate.m */; };
+		23EA1D7D27E194160088806B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D7C27E194160088806B /* SceneDelegate.m */; };
+		23EA1D8027E194160088806B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D7F27E194160088806B /* ViewController.m */; };
+		23EA1D8327E194160088806B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D8127E194160088806B /* Main.storyboard */; };
+		23EA1D8527E194190088806B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D8427E194190088806B /* Assets.xcassets */; };
+		23EA1D8827E194190088806B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D8627E194190088806B /* LaunchScreen.storyboard */; };
+		23EA1D8B27E194190088806B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D8A27E194190088806B /* main.m */; };
+		23EA1D9527E1947F0088806B /* DeviceItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D8F27E1947E0088806B /* DeviceItemView.xib */; };
+		23EA1D9627E1947F0088806B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D9027E1947E0088806B /* TableViewCell.m */; };
+		23EA1D9727E1947F0088806B /* MeasureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA1D9327E1947F0088806B /* MeasureViewController.m */; };
+		23EA1D9827E1947F0088806B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1D9427E1947F0088806B /* TableViewCell.xib */; };
+		23EA1DB127E19A8C0088806B /* BravLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EA1D9A27E1959F0088806B /* BravLib.framework */; };
+		23EA1DB227E19A8C0088806B /* BravLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23EA1D9A27E1959F0088806B /* BravLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23EA1DAE27E19A050088806B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23EA1DB227E19A8C0088806B /* BravLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23EA1D1327E18AED0088806B /* BravLibDemoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BravLibDemoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		23EA1D1627E18AED0088806B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23EA1D1827E18AED0088806B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23EA1D1A27E18AED0088806B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23EA1D1C27E18AF00088806B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23EA1D1F27E18AF00088806B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		23EA1D2227E18AF00088806B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23EA1D2427E18AF00088806B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EA1D2B27E18BDE0088806B /* BravBleDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BravBleDemoApp.swift; sourceTree = "<group>"; };
+		23EA1D2D27E18BDE0088806B /* BleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleModel.swift; sourceTree = "<group>"; };
+		23EA1D2E27E18BDE0088806B /* ItemWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemWrap.swift; sourceTree = "<group>"; };
+		23EA1D2F27E18BDE0088806B /* MeasureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureModel.swift; sourceTree = "<group>"; };
+		23EA1D3127E18BDE0088806B /* ReportItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportItemView.swift; sourceTree = "<group>"; };
+		23EA1D3227E18BDE0088806B /* DeviceItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceItemView.swift; sourceTree = "<group>"; };
+		23EA1D3427E18BDE0088806B /* ReportBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3627E18BDE0088806B /* ProteinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProteinBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3727E18BDE0088806B /* WeightCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3827E18BDE0088806B /* BodyfatCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyfatCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3927E18BDE0088806B /* BmrBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmrBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3A27E18BDE0088806B /* VisfatCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisfatCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3B27E18BDE0088806B /* MuscleMassCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleMassCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3C27E18BDE0088806B /* WaterCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3D27E18BDE0088806B /* SkeletalMuscleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletalMuscleBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3E27E18BDE0088806B /* BodyAgeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyAgeBuilder.swift; sourceTree = "<group>"; };
+		23EA1D3F27E18BDE0088806B /* BmiCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BmiCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D4027E18BDE0088806B /* LbmBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LbmBuilder.swift; sourceTree = "<group>"; };
+		23EA1D4127E18BDE0088806B /* BoneCommonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneCommonBuilder.swift; sourceTree = "<group>"; };
+		23EA1D4227E18BDE0088806B /* SubfatBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubfatBuilder.swift; sourceTree = "<group>"; };
+		23EA1D4427E18BDE0088806B /* ReportBuilderOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportBuilderOption.swift; sourceTree = "<group>"; };
+		23EA1D4527E18BDE0088806B /* LevelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelItem.swift; sourceTree = "<group>"; };
+		23EA1D4627E18BDE0088806B /* BravScaleReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BravScaleReport.swift; sourceTree = "<group>"; };
+		23EA1D4727E18BDE0088806B /* ReportType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportType.swift; sourceTree = "<group>"; };
+		23EA1D4827E18BDE0088806B /* ReportItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportItem.swift; sourceTree = "<group>"; };
+		23EA1D4927E18BDE0088806B /* I18n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I18n.swift; sourceTree = "<group>"; };
+		23EA1D4A27E18BDE0088806B /* ReportItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportItemBuilder.swift; sourceTree = "<group>"; };
+		23EA1D4B27E18BDE0088806B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		23EA1D4D27E18BDE0088806B /* MeasurePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurePage.swift; sourceTree = "<group>"; };
+		23EA1D4E27E18BDE0088806B /* ScannerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerPage.swift; sourceTree = "<group>"; };
+		23EA1D6E27E18C1A0088806B /* BravLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BravLib.framework; sourceTree = "<group>"; };
+		23EA1D7627E194160088806B /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EA1D7827E194160088806B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23EA1D7927E194160088806B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		23EA1D7B27E194160088806B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		23EA1D7C27E194160088806B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		23EA1D7E27E194160088806B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		23EA1D7F27E194160088806B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		23EA1D8227E194160088806B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23EA1D8427E194190088806B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23EA1D8727E194190088806B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23EA1D8927E194190088806B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EA1D8A27E194190088806B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23EA1D8F27E1947E0088806B /* DeviceItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceItemView.xib; sourceTree = "<group>"; };
+		23EA1D9027E1947E0088806B /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		23EA1D9127E1947F0088806B /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		23EA1D9227E1947F0088806B /* MeasureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureViewController.h; sourceTree = "<group>"; };
+		23EA1D9327E1947F0088806B /* MeasureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureViewController.m; sourceTree = "<group>"; };
+		23EA1D9427E1947F0088806B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		23EA1D9A27E1959F0088806B /* BravLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BravLib.framework; sourceTree = "<group>"; };
+		23EA1DA827E199A40088806B /* OCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +134,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EA1D6F27E18C1A0088806B /* BravLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EA1D7327E194160088806B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EA1DB127E19A8C0088806B /* BravLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				23EA1D1527E18AED0088806B /* BravLibDemoIOS */,
+				23EA1D7727E194160088806B /* OCDemo */,
 				23EA1D1427E18AED0088806B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				23EA1D1327E18AED0088806B /* BravLibDemoIOS.app */,
+				23EA1D7627E194160088806B /* OCDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +170,8 @@
 		23EA1D1527E18AED0088806B /* BravLibDemoIOS */ = {
 			isa = PBXGroup;
 			children = (
-				23EA1D1627E18AED0088806B /* AppDelegate.swift */,
-				23EA1D1827E18AED0088806B /* SceneDelegate.swift */,
-				23EA1D1A27E18AED0088806B /* ContentView.swift */,
+				23EA1D6D27E18C1A0088806B /* libs */,
+				23EA1D2A27E18BDE0088806B /* src */,
 				23EA1D1C27E18AF00088806B /* Assets.xcassets */,
 				23EA1D2127E18AF00088806B /* LaunchScreen.storyboard */,
 				23EA1D2427E18AF00088806B /* Info.plist */,
@@ -73,6 +186,133 @@
 				23EA1D1F27E18AF00088806B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23EA1D2A27E18BDE0088806B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D2B27E18BDE0088806B /* BravBleDemoApp.swift */,
+				23EA1D2C27E18BDE0088806B /* model */,
+				23EA1D3027E18BDE0088806B /* view */,
+				23EA1D3327E18BDE0088806B /* report */,
+				23EA1D4C27E18BDE0088806B /* pages */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		23EA1D2C27E18BDE0088806B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D2D27E18BDE0088806B /* BleModel.swift */,
+				23EA1D2E27E18BDE0088806B /* ItemWrap.swift */,
+				23EA1D2F27E18BDE0088806B /* MeasureModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		23EA1D3027E18BDE0088806B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D3127E18BDE0088806B /* ReportItemView.swift */,
+				23EA1D3227E18BDE0088806B /* DeviceItemView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		23EA1D3327E18BDE0088806B /* report */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D3427E18BDE0088806B /* ReportBuilder.swift */,
+				23EA1D3527E18BDE0088806B /* builders */,
+				23EA1D4327E18BDE0088806B /* model */,
+				23EA1D4927E18BDE0088806B /* I18n.swift */,
+				23EA1D4A27E18BDE0088806B /* ReportItemBuilder.swift */,
+				23EA1D4B27E18BDE0088806B /* Utils.swift */,
+			);
+			path = report;
+			sourceTree = "<group>";
+		};
+		23EA1D3527E18BDE0088806B /* builders */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D3627E18BDE0088806B /* ProteinBuilder.swift */,
+				23EA1D3727E18BDE0088806B /* WeightCommonBuilder.swift */,
+				23EA1D3827E18BDE0088806B /* BodyfatCommonBuilder.swift */,
+				23EA1D3927E18BDE0088806B /* BmrBuilder.swift */,
+				23EA1D3A27E18BDE0088806B /* VisfatCommonBuilder.swift */,
+				23EA1D3B27E18BDE0088806B /* MuscleMassCommonBuilder.swift */,
+				23EA1D3C27E18BDE0088806B /* WaterCommonBuilder.swift */,
+				23EA1D3D27E18BDE0088806B /* SkeletalMuscleBuilder.swift */,
+				23EA1D3E27E18BDE0088806B /* BodyAgeBuilder.swift */,
+				23EA1D3F27E18BDE0088806B /* BmiCommonBuilder.swift */,
+				23EA1D4027E18BDE0088806B /* LbmBuilder.swift */,
+				23EA1D4127E18BDE0088806B /* BoneCommonBuilder.swift */,
+				23EA1D4227E18BDE0088806B /* SubfatBuilder.swift */,
+			);
+			path = builders;
+			sourceTree = "<group>";
+		};
+		23EA1D4327E18BDE0088806B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D4427E18BDE0088806B /* ReportBuilderOption.swift */,
+				23EA1D4527E18BDE0088806B /* LevelItem.swift */,
+				23EA1D4627E18BDE0088806B /* BravScaleReport.swift */,
+				23EA1D4727E18BDE0088806B /* ReportType.swift */,
+				23EA1D4827E18BDE0088806B /* ReportItem.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		23EA1D4C27E18BDE0088806B /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D4D27E18BDE0088806B /* MeasurePage.swift */,
+				23EA1D4E27E18BDE0088806B /* ScannerPage.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		23EA1D6D27E18C1A0088806B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D6E27E18C1A0088806B /* BravLib.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		23EA1D7727E194160088806B /* OCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D9927E1959F0088806B /* libs */,
+				23EA1D8F27E1947E0088806B /* DeviceItemView.xib */,
+				23EA1D9227E1947F0088806B /* MeasureViewController.h */,
+				23EA1D9327E1947F0088806B /* MeasureViewController.m */,
+				23EA1D9127E1947F0088806B /* TableViewCell.h */,
+				23EA1D9027E1947E0088806B /* TableViewCell.m */,
+				23EA1D9427E1947F0088806B /* TableViewCell.xib */,
+				23EA1D7827E194160088806B /* AppDelegate.h */,
+				23EA1D7927E194160088806B /* AppDelegate.m */,
+				23EA1D7B27E194160088806B /* SceneDelegate.h */,
+				23EA1D7C27E194160088806B /* SceneDelegate.m */,
+				23EA1D7E27E194160088806B /* ViewController.h */,
+				23EA1D7F27E194160088806B /* ViewController.m */,
+				23EA1D8127E194160088806B /* Main.storyboard */,
+				23EA1D8427E194190088806B /* Assets.xcassets */,
+				23EA1D8627E194190088806B /* LaunchScreen.storyboard */,
+				23EA1D8927E194190088806B /* Info.plist */,
+				23EA1D8A27E194190088806B /* main.m */,
+				23EA1DA827E199A40088806B /* OCDemo-Bridging-Header.h */,
+			);
+			path = OCDemo;
+			sourceTree = "<group>";
+		};
+		23EA1D9927E1959F0088806B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				23EA1D9A27E1959F0088806B /* BravLib.framework */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +335,24 @@
 			productReference = 23EA1D1327E18AED0088806B /* BravLibDemoIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		23EA1D7527E194160088806B /* OCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23EA1D8C27E194190088806B /* Build configuration list for PBXNativeTarget "OCDemo" */;
+			buildPhases = (
+				23EA1D7227E194160088806B /* Sources */,
+				23EA1D7327E194160088806B /* Frameworks */,
+				23EA1D7427E194160088806B /* Resources */,
+				23EA1DAE27E19A050088806B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCDemo;
+			productName = OCDemo;
+			productReference = 23EA1D7627E194160088806B /* OCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +364,10 @@
 				TargetAttributes = {
 					23EA1D1227E18AED0088806B = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					23EA1D7527E194160088806B = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -123,6 +385,7 @@
 			projectRoot = "";
 			targets = (
 				23EA1D1227E18AED0088806B /* BravLibDemoIOS */,
+				23EA1D7527E194160088806B /* OCDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +401,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23EA1D7427E194160088806B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EA1D8827E194190088806B /* LaunchScreen.storyboard in Resources */,
+				23EA1D9827E1947F0088806B /* TableViewCell.xib in Resources */,
+				23EA1D9527E1947F0088806B /* DeviceItemView.xib in Resources */,
+				23EA1D8527E194190088806B /* Assets.xcassets in Resources */,
+				23EA1D8327E194160088806B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,9 +420,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23EA1D1727E18AED0088806B /* AppDelegate.swift in Sources */,
-				23EA1D1927E18AED0088806B /* SceneDelegate.swift in Sources */,
-				23EA1D1B27E18AED0088806B /* ContentView.swift in Sources */,
+				23EA1D5827E18BDE0088806B /* BodyfatCommonBuilder.swift in Sources */,
+				23EA1D6627E18BDE0088806B /* ReportType.swift in Sources */,
+				23EA1D5E27E18BDE0088806B /* BodyAgeBuilder.swift in Sources */,
+				23EA1D6A27E18BDE0088806B /* Utils.swift in Sources */,
+				23EA1D5527E18BDE0088806B /* ReportBuilder.swift in Sources */,
+				23EA1D5227E18BDE0088806B /* MeasureModel.swift in Sources */,
+				23EA1D5B27E18BDE0088806B /* MuscleMassCommonBuilder.swift in Sources */,
+				23EA1D5327E18BDE0088806B /* ReportItemView.swift in Sources */,
+				23EA1D4F27E18BDE0088806B /* BravBleDemoApp.swift in Sources */,
+				23EA1D6427E18BDE0088806B /* LevelItem.swift in Sources */,
+				23EA1D6327E18BDE0088806B /* ReportBuilderOption.swift in Sources */,
+				23EA1D5C27E18BDE0088806B /* WaterCommonBuilder.swift in Sources */,
+				23EA1D5127E18BDE0088806B /* ItemWrap.swift in Sources */,
+				23EA1D6727E18BDE0088806B /* ReportItem.swift in Sources */,
+				23EA1D6027E18BDE0088806B /* LbmBuilder.swift in Sources */,
+				23EA1D5027E18BDE0088806B /* BleModel.swift in Sources */,
+				23EA1D5427E18BDE0088806B /* DeviceItemView.swift in Sources */,
+				23EA1D5927E18BDE0088806B /* BmrBuilder.swift in Sources */,
+				23EA1D5D27E18BDE0088806B /* SkeletalMuscleBuilder.swift in Sources */,
+				23EA1D5A27E18BDE0088806B /* VisfatCommonBuilder.swift in Sources */,
+				23EA1D6827E18BDE0088806B /* I18n.swift in Sources */,
+				23EA1D6B27E18BDE0088806B /* MeasurePage.swift in Sources */,
+				23EA1D5627E18BDE0088806B /* ProteinBuilder.swift in Sources */,
+				23EA1D5727E18BDE0088806B /* WeightCommonBuilder.swift in Sources */,
+				23EA1D6127E18BDE0088806B /* BoneCommonBuilder.swift in Sources */,
+				23EA1D6227E18BDE0088806B /* SubfatBuilder.swift in Sources */,
+				23EA1D6927E18BDE0088806B /* ReportItemBuilder.swift in Sources */,
+				23EA1D5F27E18BDE0088806B /* BmiCommonBuilder.swift in Sources */,
+				23EA1D6527E18BDE0088806B /* BravScaleReport.swift in Sources */,
+				23EA1D6C27E18BDE0088806B /* ScannerPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23EA1D7227E194160088806B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EA1D8027E194160088806B /* ViewController.m in Sources */,
+				23EA1D9727E1947F0088806B /* MeasureViewController.m in Sources */,
+				23EA1D7A27E194160088806B /* AppDelegate.m in Sources */,
+				23EA1D8B27E194190088806B /* main.m in Sources */,
+				23EA1D9627E1947F0088806B /* TableViewCell.m in Sources */,
+				23EA1D7D27E194160088806B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +473,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				23EA1D2227E18AF00088806B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		23EA1D8127E194160088806B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23EA1D8227E194160088806B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23EA1D8627E194190088806B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23EA1D8727E194190088806B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -290,6 +621,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BravLibDemoIOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 26CDU44844;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BravLibDemoIOS/libs",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/BravLibDemoIOS/libs/BravLib.framework/Headers";
 				INFOPLIST_FILE = BravLibDemoIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +647,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BravLibDemoIOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 26CDU44844;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BravLibDemoIOS/libs",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/BravLibDemoIOS/libs/BravLib.framework/Headers";
 				INFOPLIST_FILE = BravLibDemoIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,6 +661,61 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23EA1D8D27E194190088806B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26CDU44844;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCDemo/libs",
+					"$(PROJECT_DIR)/BravLibDemoIOS/libs",
+				);
+				INFOPLIST_FILE = OCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brav.OCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCDemo/OCDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		23EA1D8E27E194190088806B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26CDU44844;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCDemo/libs",
+					"$(PROJECT_DIR)/BravLibDemoIOS/libs",
+				);
+				INFOPLIST_FILE = OCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brav.OCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCDemo/OCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};
@@ -340,6 +736,15 @@
 			buildConfigurations = (
 				23EA1D2827E18AF00088806B /* Debug */,
 				23EA1D2927E18AF00088806B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23EA1D8C27E194190088806B /* Build configuration list for PBXNativeTarget "OCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EA1D8D27E194190088806B /* Debug */,
+				23EA1D8E27E194190088806B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
